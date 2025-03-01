@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Jan-Danielle-Plaza-s-workspace-oti195.us-west-2.xata.sh/db/task_management_platform",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
