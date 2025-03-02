@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_7394c7a1740160",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE invitation (id text PRIMARY KEY NOT NULL, organization_id text NOT NULL, email text NOT NULL, role text, status text NOT NULL, expires_at timestamp NOT NULL, inviter_id text NOT NULL)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_7394c7a1740160",
+  "parent": "sql_7ec43b0ac316f9",
+  "schema": "public",
+  "startedAt": "2025-03-01T14:01:53.57022Z"
+}

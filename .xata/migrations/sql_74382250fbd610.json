@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_74382250fbd610",
+    "operations": [
+      {
+        "sql": {
+          "up": "DROP TABLE team CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_74382250fbd610",
+  "parent": "sql_0a85d544241734",
+  "schema": "public",
+  "startedAt": "2025-03-01T14:01:54.720754Z"
+}

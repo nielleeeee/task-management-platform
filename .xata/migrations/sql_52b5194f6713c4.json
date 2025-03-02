@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_52b5194f6713c4",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE member ADD CONSTRAINT member_organization_id_organization_id_fk FOREIGN KEY (organization_id) REFERENCES bb_prsdk4q26t7ip51v52niev8v4o_oti195.organization (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_52b5194f6713c4",
+  "parent": "sql_2af3b6fb95aada",
+  "schema": "public",
+  "startedAt": "2025-03-01T14:04:03.27725Z"
+}

@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_55c8604d450f10",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE task ADD CONSTRAINT task_assigned_to_user_id_fk FOREIGN KEY (assigned_to) REFERENCES bb_prsdk4q26t7ip51v52niev8v4o_oti195.\"user\" (id)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_55c8604d450f10",
+  "parent": "sql_e03a8d6f43129e",
+  "schema": "public",
+  "startedAt": "2025-03-01T13:42:13.207899Z"
+}

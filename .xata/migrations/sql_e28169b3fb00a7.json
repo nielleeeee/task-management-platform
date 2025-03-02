@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_e28169b3fb00a7",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE team (id serial PRIMARY KEY NOT NULL, name text NOT NULL, created_at timestamp DEFAULT now() NOT NULL, updated_at timestamp DEFAULT now() NOT NULL)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_e28169b3fb00a7",
+  "parent": "sql_cb568ffc9e9748",
+  "schema": "public",
+  "startedAt": "2025-03-01T13:42:12.47119Z"
+}

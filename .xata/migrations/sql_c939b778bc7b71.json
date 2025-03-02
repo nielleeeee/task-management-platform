@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_c939b778bc7b71",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE session ADD COLUMN active_organization_id text"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_c939b778bc7b71",
+  "parent": "sql_aaa00d2a06c5d3",
+  "schema": "public",
+  "startedAt": "2025-03-01T14:01:55.171799Z"
+}

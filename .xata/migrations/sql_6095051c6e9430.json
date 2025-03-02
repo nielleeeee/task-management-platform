@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_6095051c6e9430",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE invitation ADD CONSTRAINT invitation_inviter_id_user_id_fk FOREIGN KEY (inviter_id) REFERENCES bb_prsdk4q26t7ip51v52niev8v4o_oti195.\"user\" (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_6095051c6e9430",
+  "parent": "sql_be24695439d4ee",
+  "schema": "public",
+  "startedAt": "2025-03-01T14:01:55.586202Z"
+}

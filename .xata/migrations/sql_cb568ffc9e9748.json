@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_cb568ffc9e9748",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE task (id serial PRIMARY KEY NOT NULL, title text NOT NULL, description text, status task_status DEFAULT 'todo' NOT NULL, team_id int NOT NULL, assigned_to text, created_at timestamp DEFAULT now() NOT NULL, updated_at timestamp DEFAULT now() NOT NULL)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_cb568ffc9e9748",
+  "parent": "sql_a01279c39ebd29",
+  "schema": "public",
+  "startedAt": "2025-03-01T13:42:12.171795Z"
+}

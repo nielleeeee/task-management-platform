@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_a01279c39ebd29",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TYPE bb_prsdk4q26t7ip51v52niev8v4o_oti195.task_status AS ENUM ('todo', 'in_progress', 'done', 'blocked')"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_a01279c39ebd29",
+  "parent": "sql_3f1cac70633612",
+  "schema": "public",
+  "startedAt": "2025-03-01T13:42:11.756802Z"
+}

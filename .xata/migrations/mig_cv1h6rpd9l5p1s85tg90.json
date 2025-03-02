@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cv1h6rpd9l5p1s85tg90",
+    "operations": [
+      {
+        "drop_table": {
+          "name": "verification"
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cv1h6rpd9l5p1s85tg90",
+  "parent": "sql_860288aec0548e",
+  "schema": "public",
+  "startedAt": "2025-03-01T14:02:24.319194Z"
+}
