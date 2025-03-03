@@ -102,20 +102,24 @@ export const taskStatusEnum = pgEnum("task_status", [
 ]);
 
 export const task = pgTable("task", {
-  id: serial("id").primaryKey(),
+  id: text("id").primaryKey(), 
   title: text("title").notNull(),
   description: text("description"),
   status: taskStatusEnum("status").notNull().default("todo"),
   memberId: text("member_id")
     .notNull()
-    .references(() => member.id, { onDelete: "cascade" }), // Link task to member
+    .references(() => member.id, { onDelete: "cascade" }),
+  assigneeId: text("assignee_id").references(() => member.id),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
+  organizationId: text("organization_id")
+    .notNull()
+    .references(() => organization.id, { onDelete: "cascade" }),
 });
 
 export const comment = pgTable("comment", {
-  id: serial("id").primaryKey(),
-  taskId: integer("task_id")
+  id: text("id").primaryKey(),
+  taskId: text("task_id")
     .notNull()
     .references(() => task.id, { onDelete: "cascade" }),
   memberId: text("member_id")
