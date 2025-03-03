@@ -435,6 +435,113 @@ const tables = [
     ],
   },
   {
+    name: "task",
+    checkConstraints: {},
+    foreignKeys: {
+      task_assignee_id_member_id_fk: {
+        name: "task_assignee_id_member_id_fk",
+        columns: ["assignee_id"],
+        referencedTable: "member",
+        referencedColumns: ["id"],
+        onDelete: "NO ACTION",
+      },
+      task_member_id_member_id_fk: {
+        name: "task_member_id_member_id_fk",
+        columns: ["member_id"],
+        referencedTable: "member",
+        referencedColumns: ["id"],
+        onDelete: "CASCADE",
+      },
+      task_organization_id_organization_id_fk: {
+        name: "task_organization_id_organization_id_fk",
+        columns: ["organization_id"],
+        referencedTable: "organization",
+        referencedColumns: ["id"],
+        onDelete: "CASCADE",
+      },
+    },
+    primaryKey: ["id"],
+    uniqueConstraints: {},
+    columns: [
+      {
+        name: "assignee_id",
+        type: "link",
+        link: { table: "member" },
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: "",
+      },
+      {
+        name: "created_at",
+        type: "timestamp without time zone",
+        notNull: true,
+        unique: false,
+        defaultValue: "now()",
+        comment: "",
+      },
+      {
+        name: "description",
+        type: "text",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: "",
+      },
+      {
+        name: "id",
+        type: "text",
+        notNull: true,
+        unique: true,
+        defaultValue: null,
+        comment: "",
+      },
+      {
+        name: "member_id",
+        type: "link",
+        link: { table: "member" },
+        notNull: true,
+        unique: false,
+        defaultValue: null,
+        comment: "",
+      },
+      {
+        name: "organization_id",
+        type: "link",
+        link: { table: "organization" },
+        notNull: true,
+        unique: false,
+        defaultValue: null,
+        comment: "",
+      },
+      {
+        name: "status",
+        type: "bb_prsdk4q26t7ip51v52niev8v4o_oti195.task_status",
+        notNull: true,
+        unique: false,
+        defaultValue:
+          "'todo'::bb_prsdk4q26t7ip51v52niev8v4o_oti195.task_status",
+        comment: "",
+      },
+      {
+        name: "title",
+        type: "text",
+        notNull: true,
+        unique: false,
+        defaultValue: null,
+        comment: "",
+      },
+      {
+        name: "updated_at",
+        type: "timestamp without time zone",
+        notNull: true,
+        unique: false,
+        defaultValue: "now()",
+        comment: "",
+      },
+    ],
+  },
+  {
     name: "user",
     checkConstraints: {},
     foreignKeys: {},
@@ -578,6 +685,9 @@ export type OrganizationRecord = Organization & XataRecord;
 export type Session = InferredTypes["session"];
 export type SessionRecord = Session & XataRecord;
 
+export type Task = InferredTypes["task"];
+export type TaskRecord = Task & XataRecord;
+
 export type User = InferredTypes["user"];
 export type UserRecord = User & XataRecord;
 
@@ -590,6 +700,7 @@ export type DatabaseSchema = {
   member: MemberRecord;
   organization: OrganizationRecord;
   session: SessionRecord;
+  task: TaskRecord;
   user: UserRecord;
   verification: VerificationRecord;
 };

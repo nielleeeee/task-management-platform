@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_af41e5fec08885",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE comment ADD CONSTRAINT comment_task_id_task_id_fk FOREIGN KEY (task_id) REFERENCES bb_prsdk4q26t7ip51v52niev8v4o_oti195.task (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_af41e5fec08885",
+  "parent": "sql_08d616c6a8cb96",
+  "schema": "public",
+  "startedAt": "2025-03-03T17:54:11.776245Z"
+}

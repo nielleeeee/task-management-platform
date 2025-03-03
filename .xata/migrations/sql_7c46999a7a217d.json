@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_7c46999a7a217d",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE task ADD CONSTRAINT task_organization_id_organization_id_fk FOREIGN KEY (organization_id) REFERENCES bb_prsdk4q26t7ip51v52niev8v4o_oti195.organization (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_7c46999a7a217d",
+  "parent": "sql_676390b35dca0f",
+  "schema": "public",
+  "startedAt": "2025-03-03T20:02:51.412091Z"
+}

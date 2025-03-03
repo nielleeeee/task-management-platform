@@ -1,0 +1,19 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cv30l9usmb246lgm5g1g",
+    "operations": [
+      {
+        "drop_column": {
+          "table": "task",
+          "column": "id"
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cv30l9usmb246lgm5g1g",
+  "parent": "sql_33c53fa97193bb",
+  "schema": "public",
+  "startedAt": "2025-03-03T20:01:44.476551Z"
+}

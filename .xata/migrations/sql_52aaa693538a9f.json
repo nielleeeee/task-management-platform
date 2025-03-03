@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_52aaa693538a9f",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE task ADD COLUMN organization_id text NOT NULL"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_52aaa693538a9f",
+  "parent": "sql_9e668023104d05",
+  "schema": "public",
+  "startedAt": "2025-03-03T20:02:50.764623Z"
+}

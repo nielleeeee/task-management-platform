@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_536398778e2870",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE comment (id serial PRIMARY KEY NOT NULL, task_id int NOT NULL, member_id text NOT NULL, content text NOT NULL, created_at timestamp DEFAULT now() NOT NULL, updated_at timestamp DEFAULT now() NOT NULL)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_536398778e2870",
+  "parent": "sql_641ad3038e0cca",
+  "schema": "public",
+  "startedAt": "2025-03-03T17:54:11.24641Z"
+}

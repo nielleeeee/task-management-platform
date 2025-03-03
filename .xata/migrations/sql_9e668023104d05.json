@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_9e668023104d05",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE task ADD COLUMN id text PRIMARY KEY NOT NULL"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_9e668023104d05",
+  "parent": "mig_cv30l9usmb246lgm5g1g",
+  "schema": "public",
+  "startedAt": "2025-03-03T20:02:50.527252Z"
+}

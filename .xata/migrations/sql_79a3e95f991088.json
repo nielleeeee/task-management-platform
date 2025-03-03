@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_79a3e95f991088",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE task ADD CONSTRAINT task_member_id_member_id_fk FOREIGN KEY (member_id) REFERENCES bb_prsdk4q26t7ip51v52niev8v4o_oti195.member (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_79a3e95f991088",
+  "parent": "sql_1c0f527e14b2b3",
+  "schema": "public",
+  "startedAt": "2025-03-03T17:54:12.221896Z"
+}

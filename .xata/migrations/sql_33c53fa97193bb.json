@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_33c53fa97193bb",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE comment (id text PRIMARY KEY NOT NULL, task_id text NOT NULL, member_id text NOT NULL, content text NOT NULL, created_at timestamp DEFAULT now() NOT NULL, updated_at timestamp DEFAULT now() NOT NULL)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_33c53fa97193bb",
+  "parent": "mig_cv30ikesmb246lgm5g0g",
+  "schema": "public",
+  "startedAt": "2025-03-03T19:56:32.316516Z"
+}

@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cv305nmsmb246lgm5fog",
+    "operations": [
+      {
+        "drop_table": {
+          "name": "sample"
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cv305nmsmb246lgm5fog",
+  "parent": "mig_cv30546smb246lgm5fng",
+  "schema": "public",
+  "startedAt": "2025-03-03T19:28:30.887265Z"
+}
