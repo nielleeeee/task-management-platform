@@ -26,6 +26,10 @@ export default async function Home() {
 
   return (
     <main className="h-screen py-20 px-4">
+      <div className="container mx-auto pt-6">
+        <h1 className="text-3xl font-bold">Task Dashboard</h1>
+      </div>
+
       <Dashboard />
     </main>
   );
