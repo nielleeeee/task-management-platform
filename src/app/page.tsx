@@ -12,18 +12,6 @@ export default async function Home() {
     redirect("/sign-in");
   }
 
-  // const user = session.user;
-
-  // const SampleSeedData = () => {
-  //   return (
-  //     <form action={seedData}>
-  //       <Button type="submit" className="w-full cursor-pointer">
-  //         Sample Seed Data
-  //       </Button>
-  //     </form>
-  //   );
-  // };
-
   return (
     <main className="h-screen py-20 px-4">
       <div className="container mx-auto pt-6">
