@@ -1,8 +1,11 @@
 // import { Task } from "@/xata";
 
-// export interface Task extends Task {
-//   assigneeName: string;
-// }
+enum TaskStatus {
+  todo = "todo",
+  in_progress = "in_progress",
+  done = "done",
+  blocked = "blocked",
+}
 
 export interface TaskBoardType {
   id: string;
@@ -11,12 +14,12 @@ export interface TaskBoardType {
   assigneeId: string | null;
   assigneeName: string | null;
   memberId: string;
-  status: "todo" | "in_progress" | "done" | "blocked";
+  status: TaskStatus;
   organizationId: string;
 }
 
 export interface ColumnTask {
-  status: "todo" | "in_progress" | "done" | "blocked";
+  status: TaskStatus;
   title: string;
 }
 
