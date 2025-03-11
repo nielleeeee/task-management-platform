@@ -1,13 +1,6 @@
-// import { Task } from "@/xata";
+type TaskStatus = "todo" | "in_progress" | "done" | "blocked";
 
-enum TaskStatus {
-  todo = "todo",
-  in_progress = "in_progress",
-  done = "done",
-  blocked = "blocked",
-}
-
-export interface TaskBoardType {
+interface TaskBoardType {
   id: string;
   title: string;
   description: string | null;
@@ -18,15 +11,20 @@ export interface TaskBoardType {
   organizationId: string;
 }
 
-export interface ColumnTask {
+interface ColumnTaskType {
   status: TaskStatus;
   title: string;
 }
 
-export interface ColumnTaskProps {
-  column: ColumnTask;
-  tasks: TaskListType[];
+interface ColumnTaskProps {
+  column: ColumnTaskType;
+  tasks: TaskBoardType[];
   teamMembers: { id: string; name: string }[];
   handleEdit: (id: string) => void;
   handleDelete: (id: string) => void;
+}
+
+interface TaskBoardProps {
+  organizationTasks: TaskBoardType[];
+  teamMembers: { id: string; name: string }[];
 }
