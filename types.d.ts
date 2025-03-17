@@ -28,3 +28,8 @@ interface TaskBoardProps {
   organizationTasks: TaskBoardType[];
   teamMembers: { id: string; name: string }[];
 }
+
+interface UpdateTaskStatusProps {
+  id: string;
+  status: TaskStatus;
+}
