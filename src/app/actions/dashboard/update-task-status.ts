@@ -5,12 +5,6 @@ import * as schema from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
-import { TaskStatus } from "../../../../types";
-
-interface UpdateTaskStatusProps {
-  id: string;
-  status: TaskStatus;
-}
 
 export async function updateTaskStatus({ id, status }: UpdateTaskStatusProps) {
   try {
