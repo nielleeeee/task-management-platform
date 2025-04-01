@@ -1,6 +1,5 @@
 "use client";
 
-import { ColumnTaskProps } from "../../../types";
 import { useDroppable } from "@dnd-kit/core";
 import { TaskCard } from "@/components/dashboard/task-card";
 
