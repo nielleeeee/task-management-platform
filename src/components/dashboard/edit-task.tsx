@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { updateTask } from "@/app/actions/dashboard/update-task";
-import { TaskBoardType } from "../../../types";
 
 import {
   DialogFooter,
