@@ -1,6 +1,5 @@
 "use client";
 
-import { TaskBoardType } from "../../../types";
 import { useDraggable } from "@dnd-kit/core";
 import {
   Card,
